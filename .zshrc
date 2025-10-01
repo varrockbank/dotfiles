@@ -29,4 +29,4 @@ bindkey -v
 #24 bit true color
 export TERM=xterm-256color
 
-
+cd ~/Documents
