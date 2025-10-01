@@ -34,7 +34,7 @@ config.macos_window_background_blur = 10
 
 -- The art is a bit too bright and colorful to be useful as a backdrop
 -- for text, so we're going to dim it down to 10% of its normal brightness
-local dimmer = { brightness = 0.1 }
+local dimmer = { brightness = 0.2 }
 
 config.enable_scroll_bar = true
 config.min_scroll_bar_height = '2cell'
@@ -57,6 +57,7 @@ config.background = {
     -- pixels moved by the main viewport. This makes it appear to be
     -- further behind the text.
     attachment = { Parallax = 0.2 },
+    opacity = .4,
   },
   -- Subsequent layers are rendered over the top of each other
   {
@@ -71,6 +72,7 @@ config.background = {
     vertical_align = 'Bottom',
     repeat_y_size = '200%',
     hsb = dimmer,
+    opacity = .7,
 
     -- The parallax factor is higher than the background layer, so this
     -- one will appear to be closer when we scroll
