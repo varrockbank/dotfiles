@@ -20,7 +20,7 @@ PROMPT_DIRTRIM=2
 PROMPT='${PROMPT_USER}%F{magenta}%~%f %(?.%F{green}✔%f.%F{red}✘%f) %F{yellow}❯%f '
 
 # Aliases
-alias ll="ls -lahG"
+alias lss="ls -lahG"
 
 alias gs="git status"
 alias v="nvim"
@@ -43,4 +43,5 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
