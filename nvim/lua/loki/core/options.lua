@@ -8,7 +8,7 @@ opt.number = true
 
 opt.insertmode = false
 opt.timeout = true
-out.timeoutlen = 500
+opt.timeoutlen = 500
 
 -- tabs & indentation
 opt.tabstop = 2
