@@ -20,15 +20,13 @@ PROMPT_DIRTRIM=2
 PROMPT='${PROMPT_USER}%F{magenta}%~%f %(?.%F{green}✔%f.%F{red}✘%f) %F{yellow}❯%f '
 
 # Aliases
-alias ls="ls -lah -G"
+alias ll="ls -lahG"
+
 alias gs="git status"
-alias v="vim"
+alias v="nvim"
 
 # Default editor
 export EDITOR=vim
-
-# Enable colors
-autoload -U colors && colors
 
 # Use vi keybindings
 bindkey -v
