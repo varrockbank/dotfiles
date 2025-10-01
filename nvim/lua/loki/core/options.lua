@@ -1,8 +1,14 @@
+vim.cmd("let g:netrw_liststyle = 3")
+
 local opt = vim.opt -- conciseness
 
 -- line numners
 opt.relativenumber = true
 opt.number = true
+
+opt.insertmode = false
+opt.timeout = true
+out.timeoutlen = 500
 
 -- tabs & indentation
 opt.tabstop = 2
