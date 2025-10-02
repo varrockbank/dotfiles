@@ -29,7 +29,7 @@ config.colors = {
 	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
 }
 
-config.window_background_opacity = 0.6
+config.window_background_opacity = 0.8
 config.macos_window_background_blur = 10
 
 -- The art is a bit too bright and colorful to be useful as a backdrop
@@ -41,7 +41,7 @@ config.min_scroll_bar_height = '2cell'
 config.colors = {
   scrollbar_thumb = 'white',
 }
-config.background = {
+local parallax = {
   -- This is the deepest/back-most layer. It will be rendered first
   {
     source = {
@@ -117,6 +117,9 @@ config.background = {
   },
 }
 
+-- config.background = parallax 
+
 -- Finally, return the configuration to wezterm:
 return config
+
 
