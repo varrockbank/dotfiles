@@ -23,6 +23,8 @@ PROMPT='${PROMPT_USER}%F{magenta}%~%f %(?.%F{green}✔%f.%F{red}✘%f) %F{yellow
 alias lss="ls -lahG"
 
 alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
 alias v="nvim"
 
 # Default editor
